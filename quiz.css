@@ -1,5 +1,5 @@
 :root {
-    background-color: #ecf5ff;
+    background-color: white;
     font-size: 62.5%;
 }
 
@@ -18,7 +18,7 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 5.4rem;
-    color: #56a5eb;
+    color: black;
     margin-bottom: 5rem;
 }
 /*
@@ -79,6 +79,7 @@ h3 {
 /*BUTTONS*/
 
 .btn {
+    border-radius: 8px;
     font-size: 1.8rem;
     padding: 1rem 0;
     width: 20rem;
@@ -101,4 +102,56 @@ h3 {
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
+}
+
+.corner-btn {
+    border-radius: 8px;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid #56a5eb;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: white;
+
+}
+
+/* NAVBAR */
+
+nav {
+    background: black;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+label.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-btn {
+    border-radius: 8px;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid #56a5eb;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: rgb(236, 0, 0);
+    color: white;
+    float: right;
+    margin-right: 20px;
+    margin-top: 15px;
+    border-radius: 12px; 
 }
