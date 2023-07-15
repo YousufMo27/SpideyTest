@@ -6,35 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>Quiz</title>
     <link rel="stylesheet" href="app.css"/> 
-    <link rel="stylesheet" href="quiz.css"/> 
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav>
         <label class="logo"><a href ="/index.html">Home</a></label>
-        <a class="nav-btn" href="/index.html">Start The Quiz</a>
+        <a class="nav-btn" href="/index.html#contact-id">Contact Us</a>
     </nav>
     
     <div class="container">
         <div id="game" class="justify-center flex-column">
-            <h2 id="question">Whats the Answer</h2>
             <div class="choice-container">
-                <p class="choice-prefix">A</p>
-                <p id="button1" class="choice-text" onclick="return B1Input();" data-number="1" >Choice 1</p>
-            </div> 
-            <div class="choice-container">
-                <p class="choice-prefix">B</p>
-                <p class="choice-text" onclick="return B2Input();" data-number="2"  >Choice 2</p>
-            </div> 
-            <div class="choice-container">
-                <p class="choice-prefix">C</p>
-                <p class="choice-text" onclick="return B3Input();" data-number="3" >Choice 3</p>
-            </div> 
-            <div class="choice-container">
-                <p class="choice-prefix">D</p>
-                <p class="choice-text" onclick="return B4Input();" data-number="4" >Choice 4</p>
+                <h2 id="question">Whats the Answer</h2>
+                <hr>
+                <img id="question-image" src="https://via.placeholder.com/350x150">
+                <button id="b1" class="choice-btns" onclick="return B1Input();" data-number="1" ></button>
+                <button id="b2" class="choice-btns" onclick="return B2Input();" data-number="2" ></button>
+                <button id="b3" class="choice-btns" onclick="return B3Input();" data-number="3" ></button>
+                <button id="b4" class="choice-btns" onclick="return B4Input();" data-number="4" ></button>
             </div> 
         </div>
     </div>
+    <nav class="bottom-nav"> 
+        <label class="logo-git"><a href ="https://github.com/YousufMo27"><i class="fa fa-github"></i></a></label>
+        <label class="logo-link"><a href ="https://www.linkedin.com/in/yousuf-mohiuddin-774793216/"><i class="fa fa-linkedin-square"></i></a></label>
+    </nav>
     <script src="quiz.js"></script>
 </body>
 </html>

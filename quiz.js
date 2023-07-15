@@ -1,10 +1,14 @@
 const question = document.getElementById('question');
-const choices = Array.from(document.getElementsByClassName('choice-text'));
+const choices = Array.from(document.getElementsByClassName('choice-btns'));
+const images = document.getElementById('imgs');
+
 
 let currentQuestion = {};
 let acceptingAnswers = false;
 let questionCounter = 0;
 let availableQuestions = [];
+// let currentImage = {};
+// let availableImages = [];
 let B1 = 0;
 let B2 = 0;
 let B3 = 0;
@@ -12,12 +16,12 @@ let B4 = 0;
 
 let questions = [
     {
-        question: 'What Movie You Like',
-        choice1: 'A',
-        choice2: 'B',
-        choice3: 'C',
-        choice4: 'D',
-        
+        question: 'On a Friday Night, which of these movies are you watching?',
+        choice1: 'Spider-Man',
+        choice2: 'Blade Runner 2049',
+        choice3: 'LeBron Comp',
+        choice4: '',
+        imageUrl: "images/2099608.jpg",
     },
 
     {
@@ -26,6 +30,7 @@ let questions = [
         choice2: 'Bf',
         choice3: 'Cv',
         choice4: 'Df',
+        imageUrl: "https://mcdn.wallpapersafari.com/medium/76/19/XhIijY.jpg",
     },
 
     {
@@ -34,6 +39,7 @@ let questions = [
         choice2: 'ff',
         choice3: 'Cd',
         choice4: 'cf',
+        imageUrl: "images/imageFam.jpg",
     }
 
 
@@ -58,9 +64,13 @@ getNewQuestion = () => {
     }
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+    // const imageIndex = Math.floor(Math.random() * availableImages.length);
     currentQuestion = availableQuestions[questionIndex];
+    document.getElementById("question-image").src = currentQuestion.imageUrl;
+    // currentImage = availableImages[imageIndex];
 
     question.innerText = currentQuestion.question;
+    // images.innerText = currentImage.images;
 
     choices.forEach(choice => {
         const number = choice.dataset['number'];

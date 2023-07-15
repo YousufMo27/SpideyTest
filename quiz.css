@@ -4,6 +4,10 @@
     font-size: 62.5%;
 }
 
+::selection {
+  background: red;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Noto Sans';
@@ -82,7 +86,7 @@ html {
     transition: all .35s;
     }
 
-    .wrapper a.start-btn:hover{
+    .wrapper a span:hover{
     color: white;
     }
 
@@ -117,6 +121,7 @@ html {
     left: 50%;
     transform: translate(-50%,-50%);
     position: absolute;
+    border-radius: 18px;
 }
 
 form {
@@ -143,7 +148,7 @@ form {
     color: #fff;
     margin-top: 18px;
     padding: 10px;
-    background-color: #47c35a;
+    background-color: #0096FF;
     font-size: 12px;
     border: none;
     cursor: pointer;
@@ -199,6 +204,7 @@ nav {
     background: white;
     height: 80px;
     width: 100%;
+    font-family: 'Noto Sans';
 }
 
 
@@ -218,7 +224,7 @@ label.logo a {
 }
 
 .nav-btn {
-    background-color: #C939FF;
+    background-color: #00008B;
     color: black;
     padding: 10px 20px;
     width: 20rem;
@@ -238,7 +244,7 @@ label.logo a {
 
 .nav-btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem rgba(86,185,235,0.5);
+    box-shadow: 0 0.4rem 1.4rem #56a5eb;
     transform: translateY(-0.5rem);
     transition: transform 100ms;
 }
@@ -552,6 +558,31 @@ label.logo a {
         cursor: pointer;
     }
     
+
+}
+
+@media only screen and (max-width:414px) {
+    label.logo a {
+        left: 12.75vh;
+    }
+
+    .bottom-nav label.logo-git i {
+        color: rgb(255, 255, 255);
+        font-size: 4.1vh;
+        position: relative;
+        top: 0.4vh;
+        left: 54%;
+    }
+    
+    .bottom-nav label.logo-link i {
+        color: rgb(255, 255, 255);
+        font-size: 4.1vh;
+        position: relative;
+        top: 0.4vh;
+        left: 30%;
+    }
+    
+
 
 }
 
