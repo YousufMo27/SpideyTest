@@ -122,9 +122,27 @@ getNewQuestion = () => {
 
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('Score', sum);
-        //go to end
-        return window.location.assign('/new.html');
+        var x = localStorage.getItem('Score');
+
+        if (x <= 29) {
+            return window.location.assign('/miles.html');
+        }
+
+        if (x >= 30 && x <= 49) {
+            return window.location.assign('/miguel.html');
+        }
+
+        if (x >= 50 && x <= 60) {
+            return window.location.assign('/gwen.html');
+        }
+
+        else {
+            return window.location.assign('/parker.html');
+        }
+
     }
+
+
     questionCounter++;
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);

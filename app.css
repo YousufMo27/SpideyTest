@@ -11,6 +11,11 @@
     color: #333;
 }
 
+
+::selection {
+  background: red;
+}
+
 html {
     scroll-behavior: smooth;
    }
