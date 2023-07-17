@@ -281,7 +281,135 @@ label.logo a {
 }
 
 
-/*MEDIA*/
+
+@media only screen and (max-height: 850px) {
+    
+    .contact-us h1 {
+        font-size: 7vh;
+    }
+
+    .contact-form {
+        width: 500px;
+        background-color: #fff;
+        box-shadow: 0 0 2px 0 #999;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        border-radius: 18px;
+    }
+    
+    form {
+        margin: 35px;
+    }
+    
+    .input-field {
+        width: 400px;
+        height: 20px;
+        margin-top: 20px;
+        padding-left: 10px;
+        border: 1px solid #777;
+        border-radius: 14px;
+        outline: none;
+    }
+    
+    .textarea-field {
+        height: 100px;
+        padding-top: 10px;
+    }
+
+    .bottom-nav {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-height: 850px) {
+    
+
+    .contact-us h1 {
+        font-size: 1vw;
+    }
+
+    .contact-form {
+        width: 500px;
+        background-color: #fff;
+        box-shadow: 0 0 2px 0 #999;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        border-radius: 18px;
+    }
+    
+    form {
+        margin: 35px;
+    }
+    
+    .input-field {
+        width: 400px;
+        height: 20px;
+        margin-top: 20px;
+        padding-left: 10px;
+        border: 1px solid #777;
+        border-radius: 14px;
+        outline: none;
+    }
+    
+    .textarea-field {
+        height: 100px;
+        padding-top: 10px;
+    }
+    
+}
+
+@media only screen and (max-height: 680px) {
+    .contact-us h1 {
+        display: none;
+    }
+
+    .wrapper h1 {
+        font-size: 2rem;
+    }
+
+    .wrapper p {
+        font-size: 1.7rem;
+    }
+    
+}
+
+
+@media only screen and (max-height: 605px) {
+    .contact-us h1 {
+        display: none;
+    }
+
+    .wrapper h1 {
+        font-size: 2rem;
+    }
+
+    .wrapper p {
+        font-size: 1.7rem;
+    }
+
+    .contact-form {
+        display: none;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .wrapper {
+        height: 90vh;
+    }
+
+    .second-wrapper {
+        height: 0vh;
+    }
+    
+}
+
 
 @media only screen and (max-width: 529px) {
     
@@ -784,12 +912,19 @@ label.logo a {
 }
 
 
-/**
-@media (min-width: 530px) {
+
+@media (min-width: 214px) {
     .wrapper {
         width: 100%;
     }
 
+    .contact-us h1 {
+        font-size: 4rem;
+    }
+
+    label.logo a {
+        left: 15rem;
+    }
 }
 
 

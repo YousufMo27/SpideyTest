@@ -21,7 +21,7 @@ let questions = [
         choice2: 'Iron Man',
         choice3: 'Captain America',
         choice4: 'Hawkeye',
-        imageUrl: "images/2099608.jpg",
+        imageUrl: "images/newmarvcha.jpg",
     },
 
     {
@@ -30,25 +30,25 @@ let questions = [
         choice2: 'Safety',
         choice3: 'Friendship',
         choice4: 'Money',
-        imageUrl: "https://mcdn.wallpapersafari.com/medium/76/19/XhIijY.jpg",
+        imageUrl: "images/house.jpg",
     },
 
     {
-        question: 'Which artist is your favourite?',
-        choice1: 'Drake',
-        choice2: 'Tame Impala',
-        choice3: 'Nirvana',
-        choice4: 'Taylor Swift',
-        imageUrl: "images/imageFam.jpg",
+        question: 'Which genre of music do you like?',
+        choice1: 'Hip-Hop',
+        choice2: 'Phonk',
+        choice3: 'Rock',
+        choice4: 'Pop',
+        imageUrl: "images/acrmusic.jpg",
     },
 
     {
         question: 'Which superhero movie is your favourite?',
         choice1: 'Spider-Man Into The Spider-Verse',
         choice2: 'The Dark Knight',
-        choice3: 'Black Panther',
+        choice3: 'The Avengers',
         choice4: 'Deadpool',
-        imageUrl: "images/imageFam.jpg",
+        imageUrl: "images/AV.jpg",
     },
 
     {
@@ -57,7 +57,7 @@ let questions = [
         choice2: 'Angry',
         choice3: 'Rebellious',
         choice4: 'Sad',
-        imageUrl: "images/imageFam.jpg",
+        imageUrl: "images/emotion.jpg",
     },
 
     {
@@ -66,7 +66,7 @@ let questions = [
         choice2: 'Math',
         choice3: 'Science',
         choice4: 'English',
-        imageUrl: "images/imageFam.jpg",
+        imageUrl: "images/boards.jpg",
     },
     
     {
@@ -84,7 +84,7 @@ let questions = [
         choice2: 'Super Strength',
         choice3: 'Super Speed',
         choice4: 'Flight',
-        imageUrl: "images/imageFam.jpg",
+        imageUrl: "images/E42.jpg",
     },
 
     {
@@ -93,7 +93,7 @@ let questions = [
         choice2: 'None, I work better alone',
         choice3: 'Miles',
         choice4: 'Miguel',
-        imageUrl: "images/imageFam.jpg",
+        imageUrl: "images/intoverse.jpg",
     },
 
 
@@ -103,7 +103,7 @@ let questions = [
         choice2: 'Tobey Maguire',
         choice3: 'Andrew Garfield',
         choice4: 'Tom Holland',
-        imageUrl: "images/imageFam.jpg",
+        imageUrl: "images/Spideys.jpg",
     }
 
 ];
@@ -124,15 +124,15 @@ getNewQuestion = () => {
         localStorage.setItem('Score', sum);
         var x = localStorage.getItem('Score');
 
-        if (x <= 29) {
+        if (x <= 19) {
             return window.location.assign('/miles.html');
         }
 
-        if (x >= 30 && x <= 49) {
+        if (x >= 20 && x <= 39) {
             return window.location.assign('/miguel.html');
         }
 
-        if (x >= 50 && x <= 60) {
+        if (x >= 40 && x <= 59) {
             return window.location.assign('/gwen.html');
         }
 
