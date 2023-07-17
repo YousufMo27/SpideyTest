@@ -213,6 +213,12 @@ label.logo a {
     padding: 15px;
 }
 
+#b1:active {
+    background-color: rgb(209, 209, 209);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
 
 /*BUTTON TWO*/
 #b2 {
@@ -237,6 +243,12 @@ label.logo a {
     font-size: 1.9rem;
     vertical-align: baseline;
     padding: 15px;
+}
+
+#b2:active {
+    background-color: rgb(209, 209, 209);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 /*BUTTON THREE*/
@@ -264,6 +276,11 @@ label.logo a {
     padding: 15px;
 }
 
+#b3:active {
+    background-color: rgb(209, 209, 209);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
 
 /*BUTTON FOUR*/
 #b4 {
@@ -288,6 +305,12 @@ label.logo a {
     font-size: 1.9rem;
     vertical-align: baseline;
     padding: 15px;
+}
+
+#b4:active {
+    background-color: rgb(209, 209, 209);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 
