@@ -570,7 +570,7 @@ label.logo a {
     label.logo a {
         color: rgb(0, 0, 0);
         position: relative;
-        left: 38.25%;
+        margin: auto;
     }
 
 }
