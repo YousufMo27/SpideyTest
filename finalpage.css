@@ -154,90 +154,16 @@ h1 {
 .bottom-nav label.logo-git i {
     color: rgb(255, 255, 255);
     font-size: 4rem;
-    position: relative;
+    position: sticky;
     top: 1%;
-    left: 52%;
+    left: 50%;
 }
 
 .bottom-nav label.logo-link i {
     color: rgb(255, 255, 255);
     font-size: 4rem;
-    position: relative;
+    position: sticky;
     top: 1%;
-    left: 46%;
+    left: 45%;
 }
 
-@media only screen and (max-width: 851px) {
-
-    
-    .bottom-nav label.logo-git i {
-        color: rgb(255, 255, 255);
-        font-size: 4.1vh;
-        position: relative;
-        top: 0.4vh;
-        left: 50%;
-        height: auto;
-    }
-    
-    .bottom-nav label.logo-link i {
-        color: rgb(255, 255, 255);
-        font-size: 4.1vh;
-        position: relative;
-        top: 0.4vh;
-        left: 38%;
-    }
-
-}
-
-@media only screen and (max-width: 763px) {
-
-    .nav-btn {
-        display: none;
-    }
-    .container {
-        width: 100%;
-    }
-
-    .spidey-img {
-        width: 50%;
-    }
-
-    .spidey2099-img {
-        width: 50%;
-    }
-}
-
-@media only screen and (max-width: 763px) {
-
-    label.logo a {
-        color: red;
-    }
-
-    .spidey-img {
-        width: 50%;
-    }
-
-    .spidey2099-img {
-        position: relative;
-        width: 60%;
-        left: 100vh;
-        
-    }
-
-    .bottom-nav label.logo-git i {
-        color: rgb(255, 255, 255);
-        font-size: 4.1vh;
-        position: relative;
-        top: 0.4vh;
-        left: 53%;
-        height: auto;
-    }
-    
-    .bottom-nav label.logo-link i {
-        color: rgb(255, 255, 255);
-        font-size: 4.1vh;
-        position: relative;
-        top: 0.4vh;
-        left: 33%;
-    }
-}

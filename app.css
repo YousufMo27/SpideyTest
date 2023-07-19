@@ -19,6 +19,7 @@
 html {
     scroll-behavior: smooth;
     min-height: 100%;
+    overflow-x: hidden; 
    }
 
 h2 {
@@ -155,7 +156,7 @@ label.logo a {
 .bottom-nav label.logo-git i {
     color: rgb(255, 255, 255);
     font-size: 4rem;
-    position: relative;
+    position: sticky;
     top: 1%;
     left: 50%;
 }
@@ -163,7 +164,7 @@ label.logo a {
 .bottom-nav label.logo-link i {
     color: rgb(255, 255, 255);
     font-size: 4rem;
-    position: relative;
+    position: sticky;
     top: 1%;
     left: 45%;
 }
@@ -179,7 +180,7 @@ label.logo a {
 /*QUESTION IMAGES*/
 
 #question-image {
-    width: 52rem;
+    width: 54rem;
     margin-top: 9rem;
     left: 26%;
     position: relative;
@@ -213,11 +214,11 @@ label.logo a {
     padding: 15px;
 }
 
-#b1:active {
+/* #b1:active {
     background-color: rgb(209, 209, 209);
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-}
+} */
 
 
 /*BUTTON TWO*/
@@ -245,11 +246,11 @@ label.logo a {
     padding: 15px;
 }
 
-#b2:active {
+/* #b2:active {
     background-color: rgb(209, 209, 209);
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-}
+} */
 
 /*BUTTON THREE*/
 #b3 {
@@ -276,11 +277,11 @@ label.logo a {
     padding: 15px;
 }
 
-#b3:active {
+/* #b3:active {
     background-color: rgb(209, 209, 209);
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-}
+} */
 
 /*BUTTON FOUR*/
 #b4 {
@@ -307,16 +308,16 @@ label.logo a {
     padding: 15px;
 }
 
-#b4:active {
+/* #b4:active {
     background-color: rgb(209, 209, 209);
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-}
+} */
 
 
 
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1600px) {
 
     #b1:hover {
         cursor: pointer;
@@ -325,12 +326,24 @@ label.logo a {
         transition: transform 150ms;
     }
 
+    #b1:active {
+        background-color: rgb(209, 209, 209);
+        box-shadow: 0 5px #666;
+    } 
+    
+
     #b2:hover {
         cursor: pointer;
         box-shadow: 0 0.4rem 1.4rem rgba(136, 144, 148, 0.5);
         transform: translateY(-3rem);
         transition: transform 150ms;
     }
+
+    #b2:active {
+        background-color: rgb(209, 209, 209);
+        box-shadow: 0 5px #666;
+    }
+    
 
     #b3:hover {
         cursor: pointer;
@@ -339,6 +352,12 @@ label.logo a {
         transition: transform 150ms;
     }
 
+    #b3:active {
+        background-color: rgb(209, 209, 209);
+        box-shadow: 0 5px #666;
+    }
+    
+
     #b4:hover {
         cursor: pointer;
         box-shadow: 0 0.4rem 1.4rem rgba(136, 144, 148, 0.5);
@@ -346,5 +365,245 @@ label.logo a {
         transition: transform 150ms;
     }
 
+    #b4:active {
+        background-color: rgb(209, 209, 209);
+        box-shadow: 0 5px #666;
+    }
+    
+
+}
+/* MEDIA */
+
+@media (max-width: 1200px) {
+
+    #b1, #b2, #b3, #b4 {
+        width: 400px;
+    }
 }
 
+@media (max-width: 950px) {
+
+    #b1, #b2, #b3, #b4 {
+        width: 300px;
+    }
+    
+    #question-image {
+        left: 19%;
+    }
+
+}
+
+@media (max-width: 800px) {
+    label.logo a {
+        font-size: 2.4rem;
+    }
+
+    .nav-btn {
+        background-color: #00008B;
+        color: black;
+        padding: 10px 20px;
+        width: 14rem;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: white;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 16px;
+        float: right;
+        margin-right: 20px;
+        margin-top: 22px;
+    }
+    
+    #question-image {
+        left: 16%;
+        width: 400px;
+    }
+
+    #b1, #b2, #b3, #b4 {
+        width: 200px;
+        font-size: 1.4rem;
+    }
+    
+}
+
+@media (max-width: 600px) {
+
+    #question-image {
+        left: 10%;
+    }
+
+    .container h2 {
+        left: 7%;
+    }
+
+    .bottom-nav label.logo-git i {
+        color: rgb(255, 255, 255);
+        font-size: 4rem;
+        position: sticky;
+        top: 1%;
+        left: 52%;
+    }
+    
+    .bottom-nav label.logo-link i {
+        color: rgb(255, 255, 255);
+        font-size: 4rem;
+        position: sticky;
+        top: 1%;
+        left: 39%;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    label.logo a {
+        color: rgb(0, 0, 0);
+        font-size: 2.4rem;  
+    }
+
+    .nav-btn {
+        background-color: #00008B;
+        color: black;
+        padding: 10px 20px;
+        width: 10rem;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1rem;
+        color: white;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 16px;
+        float: right;
+        margin-right: 20px;
+        margin-top: 22px;
+    }
+
+    .bottom-nav {
+        display: none;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .container {
+        max-width: 100%;
+        margin-top: 30px;
+        overflow-x: hidden; 
+    }
+
+    .container h2 {
+        font-size: 2rem;
+        left: 7%;
+    }
+
+    #question-image {
+        width: 240px;
+        left: 16%;
+    }
+
+    #b1 {
+        top: 370px;
+        width: 310px;
+    }
+
+    #b2 {
+        top: 450px;
+        width: 310px;
+        left: 5%;
+    }
+
+    #b3 {
+        top: 530px;
+        width: 310px;
+    }
+
+    #b4 {
+        top: 620px;
+        width: 310px;
+        left: 5%;
+    }
+
+}
+
+@media (max-width: 390px) {
+    label.logo a {
+        color: rgb(0, 0, 0);
+        font-size: 2.4rem;  
+    }
+
+    .nav-btn {
+        background-color: #00008B;
+        color: black;
+        padding: 10px 20px;
+        width: 10rem;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1rem;
+        color: white;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 16px;
+        float: right;
+        margin-right: 20px;
+        margin-top: -58px;
+    }
+
+    .bottom-nav {
+        display: none;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .container {
+        max-width: 100%;
+        margin-top: 40px;
+        height: 2000px;
+        margin-bottom: 40px;
+        height: 600px;
+        overflow-x: hidden; 
+    }
+
+    .container h2 {
+        font-size: 2rem;
+        left: 7%;
+    }
+
+    #question-image {
+        width: 240px;
+        left: 12%;
+        top: -36px;
+    }
+
+    #b1 {
+        top: 310px;
+        width: 180px;
+        left: 20%;
+        font-size: 1.4rem;
+    }
+
+    #b2 {
+        top: 375px;
+        width: 180px;
+        left: 20%;
+        font-size: 1.4rem;
+    }
+
+    #b3 {
+        top: 440px;
+        width: 180px;
+        left: 20%;
+        font-size: 1.4rem;
+    }
+
+    #b4 {
+        top: 505px;
+        width: 180px;
+        left: 20%;
+        font-size: 1.4rem;
+    }
+
+}

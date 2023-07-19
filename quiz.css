@@ -269,7 +269,7 @@ label.logo a {
 .bottom-nav label.logo-git i {
     color: rgb(255, 255, 255);
     font-size: 4rem;
-    position: relative;
+    position: sticky;
     top: 1%;
     left: 50%;
 }
@@ -277,7 +277,7 @@ label.logo a {
 .bottom-nav label.logo-link i {
     color: rgb(255, 255, 255);
     font-size: 4rem;
-    position: relative;
+    position: sticky;
     top: 1%;
     left: 45%;
 }

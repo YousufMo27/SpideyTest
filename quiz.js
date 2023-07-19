@@ -124,15 +124,15 @@ getNewQuestion = () => {
         localStorage.setItem('Score', sum);
         var x = localStorage.getItem('Score');
 
-        if (x <= 19) {
+        if (x <= 29) {
             return window.location.assign('/miles.html');
         }
 
-        if (x >= 20 && x <= 39) {
+        if (x >= 30 && x <= 44) {
             return window.location.assign('/miguel.html');
         }
 
-        if (x >= 40 && x <= 59) {
+        if (x >= 40 && x <= 54) {
             return window.location.assign('/gwen.html');
         }
 
