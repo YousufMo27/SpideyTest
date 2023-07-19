@@ -38,7 +38,7 @@ hr {
 .container {
     background-color: #ffffff;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-    width: 114rem;
+    max-width: 114rem;
     height: 76rem;
     margin: 33px auto 0;
     border-radius: 50px;

@@ -71,6 +71,7 @@ html {
   
     .wrapper a span{
     position: relative;
+    top: -9px;
     z-index: 2;
     }
 
@@ -109,7 +110,7 @@ html {
     text-align: center;
     font-size: 50px;
     position: relative;
-    top: 2vh;
+    top: 2rem;
     color: #000;
     
 }
@@ -156,7 +157,7 @@ form {
 
 /*BUTTONS*/
 
-.btn {
+.start-btn {
     border-radius: 8px;
     font-size: 1.8rem;
     padding: 1rem 0;
@@ -169,14 +170,14 @@ form {
     background-color: white;
 }
 
-.btn:hover {
+.start-btn:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem rgba(86,185,235,0.5);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
 
-.btn[disabled]:hover {
+.start-btn[disabled]:hover {
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
@@ -281,651 +282,95 @@ label.logo a {
 }
 
 
+/* MEDIA */
 
-@media only screen and (max-height: 850px) {
-    
-    .contact-us h1 {
-        font-size: 7vh;
-    }
+/* Tablets */
 
-    .contact-form {
-        width: 500px;
-        background-color: #fff;
-        box-shadow: 0 0 2px 0 #999;
-        top: 100%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        position: absolute;
-        border-radius: 18px;
-    }
-    
-    form {
-        margin: 35px;
-    }
-    
-    .input-field {
-        width: 400px;
-        height: 20px;
-        margin-top: 20px;
-        padding-left: 10px;
-        border: 1px solid #777;
-        border-radius: 14px;
-        outline: none;
-    }
-    
-    .textarea-field {
-        height: 100px;
-        padding-top: 10px;
-    }
-
-    .bottom-nav {
-        display: none;
-    }
-
-}
-
-@media only screen and (max-height: 850px) {
-    
-
-    .contact-us h1 {
-        font-size: 1vw;
-    }
-
-    .contact-form {
-        width: 500px;
-        background-color: #fff;
-        box-shadow: 0 0 2px 0 #999;
-        top: 100%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        position: absolute;
-        border-radius: 18px;
-    }
-    
-    form {
-        margin: 35px;
-    }
-    
-    .input-field {
-        width: 400px;
-        height: 20px;
-        margin-top: 20px;
-        padding-left: 10px;
-        border: 1px solid #777;
-        border-radius: 14px;
-        outline: none;
-    }
-    
-    .textarea-field {
-        height: 100px;
-        padding-top: 10px;
-    }
-    
-}
-
-@media only screen and (max-height: 680px) {
-    .contact-us h1 {
-        display: none;
-    }
-
-    .wrapper h1 {
-        font-size: 2rem;
-    }
-
-    .wrapper p {
-        font-size: 1.7rem;
-    }
-    
-}
-
-
-@media only screen and (max-height: 605px) {
-    .contact-us h1 {
-        display: none;
-    }
-
-    .wrapper h1 {
-        font-size: 2rem;
-    }
-
-    .wrapper p {
-        font-size: 1.7rem;
-    }
-
-    .contact-form {
-        display: none;
-    }
-
-    .nav-btn {
-        display: none;
+@media (max-width: 480px){
+    label.logo a {
+        color: rgb(0, 0, 0);
+        font-size: 2.4rem;  
     }
 
     .wrapper {
-        height: 90vh;
+        width: 100%;
+        height: 250px;
+        background-color: #56a5eb;
+    }
+
+    .wrapper h1 {
+        font-size: 2rem;
+        bottom: 2%;
+    }
+
+    .wrapper p {
+        font-size: 1.4rem;
+        bottom: 1%;
     }
 
     .second-wrapper {
-        height: 0vh;
-    }
-    
-}
-
-
-@media only screen and (max-width: 529px) {
-    
-    .wrapper {
-        width: 100%;
-    } 
-
-    .wrapper h1 {
-        font-size: 4vh;
+        /* background-color: blue; */
+        height: 700px;
     }
 
-    .nav-btn {
-        display: none;
-    }
-
-    .bottom-nav label.logo-git i {
-        color: rgb(255, 255, 255);
-        font-size: 4.1vh;
-        position: relative;
-        top: 0.4vh;
-        left: 50%;
-    }
-    
-    .bottom-nav label.logo-link i {
-        color: rgb(255, 255, 255);
-        font-size: 4.1vh;
-        position: relative;
-        top: 0.4vh;
-        left: 30%;
-    }
-    
-}
-
-@media only screen and (max-width: 900px) {
-    
-    .wrapper {
-        width: 100%;
-    } 
-
-    .wrapper h1 {
-        font-size: 5vh;
-        bottom:  0.2vh;
-    }
-
-    .wrapper p {
-        top: 4%;
-        font-size: 2vh;
-    }
-
-    .wrapper a {
-        top: 6vh;
-
-    }
-
-    .bottom-nav label.logo-git i {
-        color: rgb(255, 255, 255);
-        font-size: 4.1vh;
-        position: relative;
-        top: 0.4vh;
-        left: 54%;
-    }
-    
-    .bottom-nav label.logo-link i {
-        color: rgb(255, 255, 255);
-        font-size: 4.1vh;
-        position: relative;
-        top: 0.4vh;
-        left: 40%;
-    }
-}
-
-@media only screen and (max-width: 2000px) {
-
-    .bottom-nav label.logo-git i {
-        color: rgb(255, 255, 255);
-        font-size: 4.1vh;
-        position: relative;
-        top: 0.4vh;
-        left: 50%;
-    }
-    
-    .bottom-nav label.logo-link i {
-        color: rgb(255, 255, 255);
-        font-size: 4.1vh;
-        position: relative;
-        top: 0.4vh;
-        left: 44.25%;
-    }
-
-}
-
-@media only screen and (max-width: 1600px) {
-
-    .bottom-nav label.logo-git i {
-        color: rgb(255, 255, 255);
-        font-size: 4.1vh;
-        position: relative;
-        top: 0.4vh;
-        left: 51%;
-    }
-    
-    .bottom-nav label.logo-link i {
-        color: rgb(255, 255, 255);
-        font-size: 4.1vh;
-        position: relative;
-        top: 0.4vh;
-        left: 43%;
-    }
-
-}
-
-@media only screen and (max-width: 1200px) {
-
-    .bottom-nav label.logo-git i {
-        color: rgb(255, 255, 255);
-        font-size: 4.1vh;
-        position: relative;
-        top: 0.4vh;
-        left: 54%;
-    }
-    
-    .bottom-nav label.logo-link i {
-        color: rgb(255, 255, 255);
-        font-size: 4.1vh;
-        position: relative;
-        top: 0.4vh;
-        left: 40%;
-    }
-
-}
-
-@media only screen and (max-width: 750px) {
-    
-    .wrapper {
-        width: 100%;
-    } 
-
-    .wrapper h1 {
-        font-size: 4vh;
-        position: relative;
-        bottom:  5vh;
-    }
-
-    .wrapper p {
-        position: relative;
-        top: 2%;
-        font-size: 2vh;
-    }
-
-    .wrapper a {
-        top: 6vh;
-
-    }
-    .nav-btn {
-        display: none;
-    }
-
-    label.logo a {
-        color: rgb(0, 0, 0);
-        position: relative;
-        margin: auto;
-    }
-
-}
-
-@media only screen and (max-width: 680px) {
-    
-    .wrapper {
-        width: 100%;
-    } 
-
-    .wrapper h1 {
-        font-size: 4vh;
-        bottom:  0.1vh;
-    }
-
-    .wrapper p {
-        top: 4%;
-        font-size: 2vh;
-    }
-
-    .wrapper a {
-        top: 6vh;
-
-    }
-
-}
-
-@media only screen and (max-width: 510px) {
-    
-    .wrapper {
-        width: 100%;
-    } 
-
-    .wrapper h1 {
-        font-size: 4vh;
-        
-    }
-
-    .nav-btn {
-        display: none;
-    }
-
-}
-
-@media only screen and (max-width: 420px) {
-    
-    .wrapper {
-        width: 100%;
-    } 
-
-    .wrapper h1 {
-        font-size: 4vh;
-    }
-
-    .wrapper p {
-        font-size: 1.5vh;
-    }
-
-    .nav-btn {
-        display: none;
-    }
-
-    label.logo a {
-        left: 20%;
-    }
-
-
-    .contact-us h1 {
-        text-align: center;
-        font-size: 4vh;
-        position: relative;
-        top: 2vh;
-        color: #000;
-        
-    }
     .contact-form {
-        width: 300px;
-        background-color: #fff;
-        box-shadow: 0 0 2px 0 #999;
-        top: 90%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        position: absolute;
+        position: sticky;
+        max-width: 300px;
+        margin-top: 400px;
+        margin-left: 50%;
+        margin-right: auto;
     }
-    
-    form {
-        margin: 35px;
+
+    .contact-us h1 {
+        font-size: 3rem;
     }
-    
+
     .input-field {
-        width: 200px;
-        height: 40px;
-        margin-top: 20px;
-        padding-left: 10px;
-        border: 1px solid #777;
-        border-radius: 14px;
-        outline: none;
-    }
-    
-    .textarea-field {
-        height: 150px;
-        padding-top: 10px;
-    }
-    
-    .send-btn {
-        border-radius: 20px;
-        color: #fff;
-        margin-top: 18px;
-        padding: 10px;
-        background-color: #47c35a;
-        font-size: 12px;
-        border: none;
-        cursor: pointer;
-    }
-    
-
-}
-
-@media only screen and (max-width:414px) {
-    label.logo a {
-        left: 12.75vh;
-    }
-
-    .bottom-nav label.logo-git i {
-        color: rgb(255, 255, 255);
-        font-size: 4.1vh;
-        position: relative;
-        top: 0.4vh;
-        left: 54%;
-    }
-    
-    .bottom-nav label.logo-link i {
-        color: rgb(255, 255, 255);
-        font-size: 4.1vh;
-        position: relative;
-        top: 0.4vh;
-        left: 30%;
-    }
-    
-
-
-}
-
-@media only screen and (max-width: 412px) {
-
-    .bottom-nav label.logo-git i {
-        color: rgb(255, 255, 255);
-        font-size: 4.1vh;
-        position: relative;
-        top: 0.4vh;
-        left: 54%;
-    }
-    
-    .bottom-nav label.logo-link i {
-        color: rgb(255, 255, 255);
-        font-size: 4.1vh;
-        position: relative;
-        top: 0.4vh;
-        left: 30%;
-    }
-    
-}
-
-@media only screen and (max-width: 375px) {
-    
-    .wrapper {
-        width: 100%;
-    } 
-
-    .wrapper h1 {
-        font-size: 4vh;
-        color: #ffffff;
-    }
-
-    .wrapper p {
-        font-size: 1.5vh;
+        width: 210px;
     }
 
     .nav-btn {
-        display: none;
-    }
-
-    label.logo a {
-        left: 27%;
-    }
-
-
-    .contact-us h1 {
+        background-color: #00008B;
+        color: black;
+        padding: 10px 20px;
+        width: 10rem;
         text-align: center;
-        font-size: 4vh;
-        position: relative;
-        top: 2vh;
-        color: #000;
-        
-    }
-    .contact-form {
-
-        height: 300px;
-        width: 300px;
-        background-color: #fff;
-        box-shadow: 0 0 2px 0 #999;
-        top: 90%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        position: absolute;
-    }
-    
-    form {
-        margin: 35px;
-    }
-    
-    .input-field {
-        width: 200px;
-        height: 25px;
-        margin-top: 20px;
-        padding-left: 10px;
-        border: 1px solid #777;
-        border-radius: 14px;
-        outline: none;
-    }
-    
-    .textarea-field {
-        height: 50px;
-        padding-top: 10px;
-    }
-    
-    .send-btn {
-        border-radius: 20px;
-        color: #fff;
-        margin-top: 15px;
-        padding: 10px;
-        background-color: #47c35a;
-        font-size: 12px;
-        border: none;
+        text-decoration: none;
+        font-size: 1rem;
+        color: white;
+        margin: 4px 2px;
         cursor: pointer;
+        border-radius: 16px;
+        float: right;
+        margin-right: 20px;
+        margin-top: 22px;
     }
-    
 
+    
+.wrapper a{
+    width: 120px;
+    top: 10%;
+}
+
+.wrapper a span {
+    font-size: 1.4rem;
+}
+
+.bottom-nav label.logo-git i {
+    color: rgb(255, 255, 255);
+    font-size: 4.1vh;
+    position: relative;
+    top: 0.4vh;
+    margin-left: 10px;
+}
+
+.bottom-nav label.logo-link i {
+    color: rgb(255, 255, 255);
+    font-size: 4.1vh;
+    position: relative;
+    top: 0.4vh;
+    left: 30%;
 }
 
 
-@media only screen and (max-width: 280px) {
-    
-    .wrapper {
-        width: 100%;
-    } 
-
-    .wrapper h1 {
-        font-size: 4vh;
-        color: #ffffff;
-    }
-
-    .wrapper p {
-        font-size: 1.5vh;
-    }
-
-    .wrapper a {
-        position: relative;
-        font-size: 2vh;
-        top: 5%;
-        width: 100px;
-        height: 50px;
-    }
-    .nav-btn {
-        display: none;
-    }
-
-    label.logo a {
-        left: 21%;
-    }
-
-
-    .contact-us h1 {
-        text-align: center;
-        font-size: 4vh;
-        position: relative;
-        top: 2vh;
-        color: #000;
-        
-    }
-    .contact-form {
-
-        height: 300px;
-        width: 300px;
-        background-color: #fff;
-        box-shadow: 0 0 2px 0 #999;
-        top: 90%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        position: absolute;
-    }
-    
-    form {
-        margin: 35px;
-    }
-    
-    .input-field {
-        width: 200px;
-        height: 25px;
-        margin-top: 20px;
-        padding-left: 10px;
-        border: 1px solid #777;
-        border-radius: 14px;
-        outline: none;
-    }
-    
-    .textarea-field {
-        height: 50px;
-        padding-top: 10px;
-    }
-    
-    .send-btn {
-        border-radius: 20px;
-        color: #fff;
-        margin-top: 15px;
-        padding: 10px;
-        background-color: #47c35a;
-        font-size: 12px;
-        border: none;
-        cursor: pointer;
-    }
-    
-    .bottom-nav label.logo-git i {
-        color: rgb(255, 255, 255);
-        font-size: 4.1vh;
-        position: relative;
-        top: 0.4vh;
-        left: 54%;
-    }
-    
-    .bottom-nav label.logo-link i {
-        color: rgb(255, 255, 255);
-        font-size: 4.1vh;
-        position: relative;
-        top: 0.4vh;
-        left: 30%;
-    }
-
 }
-
-
-
-@media (min-width: 214px) {
-    .wrapper {
-        width: 100%;
-    }
-
-    .contact-us h1 {
-        font-size: 4rem;
-    }
-
-    label.logo a {
-        left: 15rem;
-    }
-}
-
-
-
