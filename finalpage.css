@@ -167,3 +167,221 @@ h1 {
     left: 45%;
 }
 
+/* MEDIA */
+
+@media (max-width: 800px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .container p {
+        font-size: 1.8rem;
+    }
+
+
+    /* .container .spidey2099-img {
+        position: relative;
+        left: 6rem;
+        width: 70%;
+        top: 4rem;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    
+    } */
+
+
+    label.logo a {
+        color: red;
+    }
+
+    .bottom-nav label.logo-git i {
+        color: rgb(255, 255, 255);
+        font-size: 4rem;
+        position: sticky;
+        top: 1%;
+        left: 53%;
+    }
+    
+    .bottom-nav label.logo-link i {
+        color: rgb(255, 255, 255);
+        font-size: 4rem;
+        position: sticky;
+        top: 1%;
+        left: 42%;
+    }
+
+    label.logo a {
+        font-size: 2.4rem;
+    }
+
+    .nav-btn {
+        background-color: #00008B;
+        color: black;
+        padding: 10px 20px;
+        width: 14rem;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: white;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 16px;
+        float: right;
+        margin-right: 20px;
+        margin-top: 22px;
+    }
+
+    .retake-btn {
+        left: 9vh;
+    }
+
+    #hme-btn {
+        left: 20vh;
+    }
+}
+
+
+@media (max-width: 700px) {
+    label.logo a {
+        color: purple;
+    }
+
+    .retake-btn, #hme-btn {
+        width: 13rem;
+    }
+
+    .retake-btn {
+        left: 21vw;
+    }
+    #hme-btn {
+        left: 28vw;
+    }
+
+    .container .spidey2099-img {
+        position: relative;
+        left: 10rem;
+        width: 70%;
+        top: 4rem;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    
+    }
+
+}
+
+@media (max-width: 600px) {
+    label.logo a {
+        color: pink;
+    }
+
+    .container .spidey2099-img {
+        position: relative;
+        left: 7.5rem;
+        width: 70%;
+        top: 4rem;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    
+    }
+
+    .retake-btn {
+        left: 17vw;
+    }
+    #hme-btn {
+        left: 24vw;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    label.logo a {
+        color: blue;
+    }
+
+    .retake-btn {
+        left: 13vw;
+    }
+    #hme-btn {
+        left: 19vw;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .container {
+        margin-top: 90px;
+        margin-bottom: 37px;
+    }
+
+    .nav-btn {
+        background-color: #00008B;
+        color: black;
+        padding: 10px 20px;
+        width: 10rem;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: white;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 16px;
+        float: right;
+        margin-right: 20px;
+        margin-top: 29px;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+    label.logo a {
+        color: yellow;
+    }
+
+    .container .spidey2099-img {
+        position: relative;
+        left: 6rem;
+        width: 70%;
+        top: 4rem;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    
+    }
+
+    .retake-btn {
+        left: 11vw;
+    }
+    #hme-btn {
+        left: 14vw;
+    }
+
+}
+
+@media (max-width: 390px) {
+
+    .container {
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
+    .nav-btn {
+        background-color: #00008B;
+        color: black;
+        padding: 10px 20px;
+        width: 6.7rem;
+        text-align: center;
+        text-decoration: none;
+        font-size: 0.7rem;
+        color: white;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 16px;
+        float: right;
+        margin-right: 20px;
+        margin-top: 29px;
+    }
+
+    .retake-btn {
+        left: 8vw;
+    }
+    #hme-btn {
+        left: 12vw;
+    }
+
+}
