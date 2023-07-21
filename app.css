@@ -157,16 +157,15 @@ label.logo a {
     color: rgb(255, 255, 255);
     font-size: 4rem;
     position: sticky;
-    top: 1%;
-    left: 50%;
+    float: right;
+    margin-right: 20px;
 }
 
 .bottom-nav label.logo-link i {
     color: rgb(255, 255, 255);
     font-size: 4rem;
-    position: sticky;
-    top: 1%;
-    left: 45%;
+    margin-left: 20px;
+    float: left;
 }
 
 .choice-container {
@@ -437,7 +436,7 @@ label.logo a {
         left: 7%;
     }
 
-    .bottom-nav label.logo-git i {
+    /* .bottom-nav label.logo-git i {
         color: rgb(255, 255, 255);
         font-size: 4rem;
         position: sticky;
@@ -451,7 +450,7 @@ label.logo a {
         position: sticky;
         top: 1%;
         left: 39%;
-    }
+    } */
 }
 
 

@@ -118,10 +118,7 @@ html {
     width: 500px;
     background-color: #fff;
     box-shadow: 0 0 2px 0 #999;
-    margin-top: 480px;
-    margin-left: auto;
-    margin-right: 24%;   
-    transform: translate(-50%,-50%);
+    margin: auto;
     position: relative;
     border-radius: 18px;
 }
@@ -270,21 +267,19 @@ label.logo a {
     color: rgb(255, 255, 255);
     font-size: 4rem;
     position: sticky;
-    top: 1%;
-    left: 50%;
+    float: right;
+    margin-right: 20px;
 }
 
 .bottom-nav label.logo-link i {
     color: rgb(255, 255, 255);
     font-size: 4rem;
-    position: sticky;
-    top: 1%;
-    left: 45%;
+    margin-left: 20px;
+    float: left;
 }
 
 
 /* MEDIA */
-
 
 @media (max-height:800px) {
 
@@ -295,7 +290,7 @@ label.logo a {
         height: 900px;
     }
 
-    .bottom-nav label.logo-git i {
+    /* .bottom-nav label.logo-git i {
         color: rgb(255, 255, 255);
         font-size: 4rem;
         position: relative;
@@ -309,19 +304,13 @@ label.logo a {
         position: relative;
         top: 1%;
         left: 42%;
-    }
-}
-
-@media (max-width: 1000px) {
-    .contact-form {
-        left: 14%;
-    }
+    } */
 }
 
 @media (max-width:800px) {
 
     .wrapper h1 {
-        font-size: 4rem;
+        font-size: 3.8rem;
         bottom: 5%;
     }
 
@@ -351,15 +340,12 @@ label.logo a {
         margin-top: 22px;
     }
 
-    .contact-form {
-        left: 50%;
-    }
 
     label.logo a {
         color: rebeccapurple;
     }
 
-    .bottom-nav label.logo-git i {
+    /* .bottom-nav label.logo-git i {
         color: rgb(255, 255, 255);
         font-size: 4rem;
         position: relative;
@@ -373,7 +359,7 @@ label.logo a {
         position: relative;
         top: 1%;
         left: 38%;
-    }
+    } */
 }
 
 @media (max-width: 480px){
@@ -405,18 +391,20 @@ label.logo a {
 
     .contact-form {
         position: sticky;
-        max-width: 300px;
-        margin-top: 400px;
-        margin-left: 50%;
+        max-width: 320px;
+        margin-top: 45px;
+        margin-bottom: 45px;
+        margin-left: 14%;
         margin-right: auto;
     }
+    
 
     .contact-us h1 {
         font-size: 3rem;
     }
 
     .input-field {
-        width: 210px;
+        width: 240px;
     }
 
     .nav-btn {
@@ -446,7 +434,7 @@ label.logo a {
     font-size: 1.4rem;
 }
 
-.bottom-nav label.logo-git i {
+/* .bottom-nav label.logo-git i {
     color: rgb(255, 255, 255);
     font-size: 4.1vh;
     position: relative;
@@ -460,7 +448,7 @@ label.logo a {
     position: relative;
     top: 0.4vh;
     left: 30%;
-}
+} */
 
 
 }
@@ -483,7 +471,23 @@ label.logo a {
         margin-top: 29px;
     }
 
-    .wrapper a {
-        top: 9%;
+    .wrapper {
+        height: 270px;
     }
+
+    .wrapper a {
+        top: 6%;
+        width: 30%;
+        position: relative;
+    }
+
+    .contact-form {
+        position: sticky;
+        max-width: 320px;
+        margin-top: 45px;
+        margin-bottom: 45px;
+        margin-left: 8%;
+        margin-right: auto;
+    }
+
 }

@@ -118,6 +118,12 @@ h1 {
 
 }
 
+.container #b-parker {
+    width: 300px;
+    left: 29%;
+    position: relative;
+}
+
 .container p {
     font-size: 2.2rem;
     position: relative;
@@ -155,16 +161,15 @@ h1 {
     color: rgb(255, 255, 255);
     font-size: 4rem;
     position: sticky;
-    top: 1%;
-    left: 50%;
+    float: right;
+    margin-right: 20px;
 }
 
 .bottom-nav label.logo-link i {
     color: rgb(255, 255, 255);
     font-size: 4rem;
-    position: sticky;
-    top: 1%;
-    left: 45%;
+    margin-left: 20px;
+    float: left;
 }
 
 /* MEDIA */
@@ -194,7 +199,16 @@ h1 {
         color: red;
     }
 
-    .bottom-nav label.logo-git i {
+    .container .spidey-img {
+        position: relative;
+        left: 145px;
+        top: 3%;
+        width: 55%;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    
+    }
+
+    /* .bottom-nav label.logo-git i {
         color: rgb(255, 255, 255);
         font-size: 4rem;
         position: sticky;
@@ -208,7 +222,7 @@ h1 {
         position: sticky;
         top: 1%;
         left: 42%;
-    }
+    } */
 
     label.logo a {
         font-size: 2.4rem;
@@ -246,6 +260,18 @@ h1 {
         color: purple;
     }
 
+    .container .spidey-img {
+        position: relative;
+        left: 120px;
+        top: 3%;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    
+    }
+
+    .container #b-parker {
+        left: 25%;
+    }
+
     .retake-btn, #hme-btn {
         width: 13rem;
     }
@@ -273,6 +299,18 @@ h1 {
         color: pink;
     }
 
+    .container .spidey-img {
+        position: relative;
+        left: 100px;
+        top: 3%;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    
+    }
+
+    .container #b-parker {
+        left: 22%;
+    }
+
     .container .spidey2099-img {
         position: relative;
         left: 7.5rem;
@@ -296,6 +334,18 @@ h1 {
         color: blue;
     }
 
+    .container #b-parker {
+        left: 18%;
+    }
+
+    .container .spidey-img {
+        position: relative;
+        left: 90px;
+        top: 3%;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    
+    }
+
     .retake-btn {
         left: 13vw;
     }
@@ -309,6 +359,18 @@ h1 {
     .container {
         margin-top: 90px;
         margin-bottom: 37px;
+    }
+
+    .container .spidey-img {
+        position: relative;
+        left: 87px;
+        top: 3%;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    
+    }
+
+    .container #b-parker {
+        left: 8%;
     }
 
     .nav-btn {
@@ -360,22 +422,35 @@ h1 {
         margin-bottom: 40px;
     }
 
+    .container .spidey-img {
+        position: relative;
+        left: 70px;
+        top: 3%;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    
+    }
+
+    .container #b-parker {
+        width: 270px;
+    }
+
     .nav-btn {
         background-color: #00008B;
         color: black;
         padding: 10px 20px;
-        width: 6.7rem;
+        width: 10rem;
         text-align: center;
         text-decoration: none;
-        font-size: 0.7rem;
+        font-size: 1rem;
         color: white;
         margin: 4px 2px;
         cursor: pointer;
         border-radius: 16px;
         float: right;
         margin-right: 20px;
-        margin-top: 29px;
-    }
+        position: relative;
+        bottom: 16vw;
+        }
 
     .retake-btn {
         left: 8vw;
