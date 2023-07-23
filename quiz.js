@@ -133,19 +133,19 @@ getNewQuestion = () => {
 
         ///conditionals used to determine outcome of the test
         if (x <= 29) {
-            return window.location.assign('https://yousufmo27.github.io/Quiz/miles.html');
+            return window.location.assign('https://yousufmo27.github.io/SpideyTest/miles.html');
         }
 
         if (x >= 30 && x <= 44) {
-            return window.location.assign('https://yousufmo27.github.io/Quiz/miguel.html');
+            return window.location.assign('https://yousufmo27.github.io/SpideyTest/miguel.html');
         }
 
         if (x >= 40 && x <= 54) {
-            return window.location.assign('https://yousufmo27.github.io/Quiz/gwen.html');
+            return window.location.assign('https://yousufmo27.github.io/SpideyTest/gwen.html');
         }
 
         else {
-            return window.location.assign('https://yousufmo27.github.io/Quiz/parker.html');
+            return window.location.assign('https://yousufmo27.github.io/SpideyTest/parker.html');
         }
 
     }
