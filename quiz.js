@@ -1,19 +1,21 @@
+//variables
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-btns'));
 const images = document.getElementById('imgs');
 
-
+//declaring arrays 
 let currentQuestion = {};
 let acceptingAnswers = false;
 let questionCounter = 0;
 let availableQuestions = [];
 
-
+//declaring button onclick functions
 let B1 = 0;
 let B2 = 0;
 let B3 = 0;
 let B4 = 0;
 
+//array for questions and their respective images
 let questions = [
     {
         question: 'What Marvel Hero is Your Favourite?',
@@ -108,8 +110,11 @@ let questions = [
 
 ];
 
+
+//Max questions is 10
 const MAX_QUESTIONS = 10;
 
+//function which starts the game
 startGame = () => {
     questionCounter = 0;
     score = 0;
@@ -117,6 +122,8 @@ startGame = () => {
     getNewQuestion();
 };
 
+
+//function which continues to the remaining question
 getNewQuestion = () => {
     const sum = B1 + B2 + B3 + B4;
 
@@ -124,6 +131,7 @@ getNewQuestion = () => {
         localStorage.setItem('Score', sum);
         var x = localStorage.getItem('Score');
 
+        ///conditionals used to determine outcome of the test
         if (x <= 29) {
             return window.location.assign('https://yousufmo27.github.io/Quiz/miles.html');
         }
@@ -142,11 +150,9 @@ getNewQuestion = () => {
 
     }
 
-
     questionCounter++;
-
+    //questions are recieved from a randomized pool
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
-
     currentQuestion = availableQuestions[questionIndex];
     document.getElementById("question-image").src = currentQuestion.imageUrl;
 
@@ -158,12 +164,11 @@ getNewQuestion = () => {
     });
 
     availableQuestions.splice(questionIndex,1);
-    
     acceptingAnswers = true;
 
-    
 };
 
+//questions are gathered after each answer is clicked
 choices.forEach (choice => {
     choice.addEventListener('click', e => {
         if(!acceptingAnswers) return;
@@ -176,6 +181,7 @@ choices.forEach (choice => {
     });
 });
 
+//onclick functions which increment each individual buttons total
 function B1Input () {
     B1+=2;
 }
@@ -192,7 +198,7 @@ function B4Input () {
     B4+=7;
 }
 
-
+//function which starts the game
 startGame();
 
  

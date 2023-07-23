@@ -26,13 +26,13 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #0096FF;
+    background-color: #041143;
     width: 100%;
     height: 45vh;
   }
 
   .wrapper h1 {
-    color: white;
+    color: #0AE1E0;
     text-align: center;
     margin-bottom: 10px;
     position: relative;
@@ -42,7 +42,7 @@ html {
   }
 
   .wrapper p {
-    color: white;
+    color: #0AE1E0;
     margin-top: 0;
     text-align: center;
     position: relative;
@@ -83,12 +83,14 @@ html {
     left: 0;
     width: 0;
     height: 100%;
-    background: #0096FF;
+    background: #041143;
     transition: all .35s;
     }
 
-    .wrapper a span:hover{
-    color: white;
+    .wrapper a:hover {
+        .btntxt {
+            color: #fff;
+        }
     }
 
     .wrapper a:hover:after{
@@ -100,9 +102,11 @@ html {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #ffffff;
+        background-color: white;
         width: 100%;
-        height: 60vh;
+        height: 65vh;
+        margin-top: -6.8rem;
+        margin-bottom: -2rem;
     }
 
 /*CONTACT FORM*/
@@ -116,12 +120,45 @@ html {
 }
 .contact-form {
     width: 500px;
-    background-color: #fff;
+    background-color: #271951;
     box-shadow: 0 0 2px 0 #999;
     margin: auto;
     position: relative;
+    top: 4%;
     border-radius: 18px;
 }
+
+.contact-form h1 {
+    color: turquoise;
+    position: relative;
+    margin-top: 65px;
+    bottom: 4rem;
+    font-weight: 100;
+}
+
+.contact-form a {
+    color: turquoise;
+    position: relative;
+    text-align: center;
+    left: 25%;
+    text-decoration: none;
+}
+
+.contact-form #cent-txt {
+    position: relative;
+    left: 190px;
+    text-decoration: none;
+}
+
+
+.contact-form i {
+    position: relative;
+    color: turquoise;
+    left: 10%;
+    font-size: 30px;
+
+}
+
 
 form {
     margin: 35px;
@@ -192,8 +229,8 @@ form {
     text-decoration: none;
     color: #56a5eb;
     background-color: white;
-
 }
+
 
 
 
@@ -223,7 +260,7 @@ label.logo a {
 }
 
 .nav-btn {
-    background-color: #00008B;
+    background-color: #271951;
     color: black;
     padding: 10px 20px;
     width: 20rem;
@@ -358,17 +395,42 @@ label.logo a {
     } */
 }
 
+@media (max-width: 600px) {
+
+    .contact-form {
+        width: 290px;
+    }  
+    
+    .contact-form h1 {
+        font-size: 1.4rem;
+    }
+
+    .contact-form h1 a {
+        left: 16%;
+        font-size: 1.3rem;
+    }
+
+    .contact-form #cent-txt {
+        left: 20%;
+    }
+
+    .contact-form i {
+        font-size: 2rem;
+    }
+}
+
+
 @media (max-width: 480px){
     label.logo a {
-        color: rgb(0, 0, 0);
+        color: black;
         font-size: 2.4rem;  
     }
 
     .wrapper {
         width: 100%;
         height: 250px;
-        background-color: #56a5eb;
     }
+    
 
     .wrapper h1 {
         font-size: 2rem;
@@ -382,16 +444,13 @@ label.logo a {
 
     .second-wrapper {
         /* background-color: blue; */
-        height: 700px;
+        height: 400px;
     }
 
     .contact-form {
         position: sticky;
         max-width: 320px;
-        margin-top: 45px;
-        margin-bottom: 45px;
-        margin-left: 14%;
-        margin-right: auto;
+        top: 70%;
     }
     
 
@@ -420,31 +479,20 @@ label.logo a {
         margin-top: 22px;
     }
 
+    .bottom-nav {
+        top: 19.2vh;
+    }
+
     
 .wrapper a{
     width: 120px;
-    top: 10%;
+    top: 6%;
+
 }
 
 .wrapper a span {
     font-size: 1.4rem;
 }
-
-/* .bottom-nav label.logo-git i {
-    color: rgb(255, 255, 255);
-    font-size: 4.1vh;
-    position: relative;
-    top: 0.4vh;
-    margin-left: 10px;
-}
-
-.bottom-nav label.logo-link i {
-    color: rgb(255, 255, 255);
-    font-size: 4.1vh;
-    position: relative;
-    top: 0.4vh;
-    left: 30%;
-} */
 
 
 }
@@ -467,22 +515,28 @@ label.logo a {
         margin-top: 29px;
     }
 
+
+    label.logo a {
+        font-size: 2rem;
+    }
     .wrapper {
         height: 270px;
     }
 
     .wrapper a {
-        top: 6%;
-        width: 30%;
+        top: 2%;
+        width: 28%;
         position: relative;
+    }
+
+    .wrapper p {
+        font-size: 1.2rem;
     }
 
     .contact-form {
         position: sticky;
         max-width: 320px;
-        margin-top: 45px;
-        margin-bottom: 45px;
-        margin-left: 8%;
+        margin-left: 11%;
         margin-right: auto;
     }
 
