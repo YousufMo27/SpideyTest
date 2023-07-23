@@ -184,16 +184,6 @@ h1 {
         font-size: 1.8rem;
     }
 
-
-    /* .container .spidey2099-img {
-        position: relative;
-        left: 6rem;
-        width: 70%;
-        top: 4rem;
-        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-    
-    } */
-
     .container .spidey-img {
         position: relative;
         left: 145px;
@@ -202,22 +192,6 @@ h1 {
         box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     
     }
-
-    /* .bottom-nav label.logo-git i {
-        color: rgb(255, 255, 255);
-        font-size: 4rem;
-        position: sticky;
-        top: 1%;
-        left: 53%;
-    }
-    
-    .bottom-nav label.logo-link i {
-        color: rgb(255, 255, 255);
-        font-size: 4rem;
-        position: sticky;
-        top: 1%;
-        left: 42%;
-    } */
 
     label.logo a {
         font-size: 2.4rem;

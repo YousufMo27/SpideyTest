@@ -327,21 +327,6 @@ label.logo a {
         height: 900px;
     }
 
-    /* .bottom-nav label.logo-git i {
-        color: rgb(255, 255, 255);
-        font-size: 4rem;
-        position: relative;
-        top: 1%;
-        left: 50%;
-    }
-    
-    .bottom-nav label.logo-link i {
-        color: rgb(255, 255, 255);
-        font-size: 4rem;
-        position: relative;
-        top: 1%;
-        left: 42%;
-    } */
 }
 
 @media (max-width:800px) {
@@ -378,21 +363,6 @@ label.logo a {
     }
 
 
-    /* .bottom-nav label.logo-git i {
-        color: rgb(255, 255, 255);
-        font-size: 4rem;
-        position: relative;
-        top: 1%;
-        left: 54%;
-    }
-    
-    .bottom-nav label.logo-link i {
-        color: rgb(255, 255, 255);
-        font-size: 4rem;
-        position: relative;
-        top: 1%;
-        left: 38%;
-    } */
 }
 
 @media (max-width: 600px) {
@@ -443,7 +413,6 @@ label.logo a {
     }
 
     .second-wrapper {
-        /* background-color: blue; */
         height: 400px;
     }
 
